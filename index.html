@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>扫雷</title>
+		<link rel="stylesheet" type="text/css" href="./src/css/index.css"/>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 class="title">扫雷</h1>
+			<div id="setGame">
+				<div class="choose">
+					<div class="basic">
+						<span>难度选择：</span>
+						<select>
+							<option value="1">初级</option>
+							<option value="2">中级</option>
+							<option value="3">高级</option>
+							<option value="4">自定义</option>
+						</select>
+					</div>
+					<div class="custom">
+						<label>高度(9-24)：<input type="number" class="set" value="9" disabled /></label>
+						<label>宽度(9-30)：<input type="number" class="set" value="9" disabled /></label>
+						<label>雷数(10-668)：<input type="number" class="set" value="10" disabled /></label>
+					</div>
+				</div>
+				<button class="start" type="button">开始游戏</button>
+			</div>
+			<div id="box">
+
+			</div>
+			<div id="hint">
+				<p>剩余雷数：<span class="mines">0</span></p>
+			</div>
+			<div id="result">
+				<div class='close'>
+				</div>
+			</div>
+
+		<script src="./src/js/index.js"></script>
+	</body>
+</html>
